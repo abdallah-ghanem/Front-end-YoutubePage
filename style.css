@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;/* make the same space between all element  */
+    padding: 0 16px;/*to make space in right and left in page*/
+    align-items: center;
+    height: 56px;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    cursor: pointer;
+}
+.left-section img{
+    width: 46%;
+    padding-left: 16px;
+}
+.mid-section{
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+.mid-section form{
+    display: flex;
+    height: 40px;
+    width: 628px;
+}
+.keyboard-icon {
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.mid-section input{
+    width:100%;
+    padding: 16px; 
+    font-size: 1.6rem;
+    border-radius: 2px 0 0 2px;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+.mid-section button{
+    width: 60px;
+    border-radius: 0 2px 2px 0;
+    border: 1px solid #d3d3d3;
+    padding-top: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.mid-section .mic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;/*center vertical*/
+    align-items: center;/*center herizontal*/
+    cursor: pointer;
+    margin-left: 5px;
+}
+.mid-section button:hover{/*when we go and consult to button*/
+    border-color: #d3d3d3;
+    background-color: #eeeeee;
+}
+
+.right-section a{    
+    padding-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.content-area {
+    height: calc(100vh -56px);/*56 heith for header*/
+    display: flex;
+    background-color: #eeeeee;
+}
+.aside{
+    height: 100%;
+    width: 280px;
+    background-color: #fffafa;
+    overflow-y: auto;/*to make bar if no. of element increase about of no oe element*/
+}
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right: 15px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 16px 10px;
+    text-decoration: none;/*to remove line under the icon*/
+    color: black;
+}
+.nav-link:hover{
+    background-color: rgpa(0,0,0,0.05);
+}
+.nav-link span{
+    margin-left: 24px;
+    font-size: 1.4rem;
+    line-height: 2em;
+    font-weight: 400;
+    color: black;
+}
+.active{
+    background-color: #d3d3d3;
+}
+#active-span{
+    font-weight: 500;
+}
