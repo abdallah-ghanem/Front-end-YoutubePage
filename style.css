@@ -91,28 +91,28 @@ header{
     display: flex;
     background-color: #eeeeee;
 }
-.aside{
+aside{
     height: 100%;
     width: 280px;
-    background-color: #fffafa;
+    background-color: #ffffff;
     overflow-y: auto;/*to make bar if no. of element increase about of no oe element*/
 }
-.nav{
+nav{
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 15px 0;
     padding-right: 15px;
 }
-.nav-link{
+.nav-link {
     display: flex;
     align-items: center;
-    padding: 16px 10px;
+    padding: 10px 16px;
     text-decoration: none;/*to remove line under the icon*/
     color: black;
 }
-.nav-link:hover{
-    background-color: rgpa(0,0,0,0.05);
+.nav-link:hover {
+    background-color: rgba(0,0,0,0.05);
 }
 .nav-link span{
     margin-left: 24px;
@@ -126,4 +126,21 @@ header{
 }
 #active-span{
     font-weight: 500;
+}
+hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin: 10px 0;
+}
+nav p{
+    font-size: 1.4rem;
+    color: #3b3b3b;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+.ch-img{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
 }
